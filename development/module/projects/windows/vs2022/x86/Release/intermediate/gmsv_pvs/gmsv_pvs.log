@@ -1,9 +1,0 @@
-﻿  main.cpp
-  util.cpp
-  interfaces.cpp
-     Bibliothek "x86\Release\gmsv_pvs_win32.lib" und Objekt "x86\Release\gmsv_pvs_win32.exp" werden erstellt.
-  Code wird generiert.
-  Previous IPDB not found, fall back to full compilation.
-  All 151 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Codegenerierung ist abgeschlossen.
-  gmsv_pvs.vcxproj -> C:\Users\rapha\Documents\GitHub\gmod-engine-pvs\development\module\projects\windows\vs2022\x86\Release\gmsv_pvs_win32.dll
