@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="interfaces">
+      <UniqueIdentifier>{C9206369-B5D8-A4B6-1EE0-7D120AB73FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{A4949D15-9036-C8EB-79F1-DB3F65324F3C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\interfaces">
+      <UniqueIdentifier>{976E1BF7-0385-198D-4CFC-A4AEB851EA14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\garrysmod_common\sourcesdk-minimal\public\interfaces\interfaces.h">
+      <Filter>public\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\source\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\garrysmod_common\sourcesdk-minimal\interfaces\interfaces.cpp">
+      <Filter>interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\util.cpp" />
+  </ItemGroup>
+</Project>
