@@ -1,7 +1,6 @@
 #pragma once
 
 #include "GarrysMod/Lua/Interface.h"
-#include "GameEventListener.h"
 #include <string>
 
 using namespace GarrysMod::Lua;

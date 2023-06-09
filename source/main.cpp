@@ -1,6 +1,5 @@
 ﻿#include <GarrysMod/Lua/Interface.h>
 #include <GarrysMod/FactoryLoader.hpp>
-#include "GameEventListener.h"
 #include "eiface.h"
 #include "util.h"
 
