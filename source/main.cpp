@@ -1,5 +1,4 @@
-﻿#include <GarrysMod/Lua/Interface.h>
-#include <GarrysMod/FactoryLoader.hpp>
+﻿#include <GarrysMod/FactoryLoader.hpp>
 #include <GarrysMod/InterfacePointers.hpp>
 #include "util2.h"
 //#include <util.h> // Causes Errors?!? Time to use the source code.

@@ -1,7 +1,4 @@
-#include "GarrysMod/Lua/Interface.h"
 #include "util2.h"
-#include <string>
-#include <checksum_crc.h>
 
 GarrysMod::Lua::ILuaBase* GlobalLUA;
 CGlobalVarsBase* gpGlobals;
