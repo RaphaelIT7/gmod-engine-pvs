@@ -93,9 +93,9 @@ LUA_FUNCTION_STATIC(CheckBoxInPVS)
 	return 1;
 }
 
-class CBaseEntity;
+/*class CBaseEntity;
 
-/* Player:SetClientVisibilityPVS(Entity player to set the PVS, Vector pvs(The Position to get the PVS from, if not passed it will use the PVS got by GetPVSForCluster))
+// Player:SetClientVisibilityPVS(Entity player to set the PVS, Vector pvs(The Position to get the PVS from, if not passed it will use the PVS got by GetPVSForCluster))
 LUA_FUNCTION_STATIC(SetClientVisibilityPVS)
 {
 	if (LUA->GetType(2) == Type::Vector) {
@@ -171,7 +171,7 @@ GMOD_MODULE_OPEN()
 	if (engine == nullptr)
 		ThrowError("Failed to initialize IVEngineServer");
 
-	gpGlobals = InterfacePointers::GlobalVars();
+	//gpGlobals = InterfacePointers::GlobalVars();
 
 	size = ceil(engine->GetClusterCount() / 8.0f);
 

@@ -1,10 +1,10 @@
 #include "util2.h"
 
 GarrysMod::Lua::ILuaBase* GlobalLUA;
-CGlobalVarsBase* gpGlobals;
+// CGlobalVarsBase* gpGlobals;
 IVEngineServer* engine;
 
-// should never be used outside of main thread!!! what happends: memory access violation
+// should never be used outside of main thread!!!
 void LuaPrint(const char* Text) {
 	GlobalLUA->PushSpecial(GarrysMod::Lua::SPECIAL_GLOB);
 		GlobalLUA->GetField(-1, "print");
@@ -13,7 +13,7 @@ void LuaPrint(const char* Text) {
 	GlobalLUA->Pop();
 }
 
-// should never be used outside of main thread!!! what happends: memory access violation
+// should never be used outside of main thread!!!
 void LuaPrint(std::string Text) {
 	GlobalLUA->PushSpecial(GarrysMod::Lua::SPECIAL_GLOB);
 		GlobalLUA->GetField(-1, "print");
@@ -22,7 +22,7 @@ void LuaPrint(std::string Text) {
 	GlobalLUA->Pop();
 }
 
-// should never be used outside of main thread!!! what happends: memory access violation
+// should never be used outside of main thread!!!
 void LuaPrint(const char* Text, GarrysMod::Lua::ILuaBase* LUA) {
 	LUA->PushSpecial(GarrysMod::Lua::SPECIAL_GLOB);
 		LUA->GetField(-1, "print");
@@ -31,7 +31,7 @@ void LuaPrint(const char* Text, GarrysMod::Lua::ILuaBase* LUA) {
 	LUA->Pop();
 }
 
-// should never be used outside of main thread!!! what happends: memory access violation
+// should never be used outside of main thread!!!
 void LuaPrint(std::string Text, GarrysMod::Lua::ILuaBase* LUA) {
 	LUA->PushSpecial(GarrysMod::Lua::SPECIAL_GLOB);
 		LUA->GetField(-1, "print");

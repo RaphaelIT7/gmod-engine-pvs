@@ -9,7 +9,7 @@ using namespace GarrysMod::Lua;
 
 extern GarrysMod::Lua::ILuaBase* GlobalLUA;
 extern IVEngineServer* engine;
-extern CGlobalVarsBase* gpGlobals;
+//extern CGlobalVarsBase* gpGlobals;
 
 extern void LuaPrint(const char*);
 extern void LuaPrint(std::string);
