@@ -52,6 +52,7 @@ jobs:
     container: debian:bullseye
     steps:
     - name: Install Dependencies
+      if: env.BUILD_64x == 'true'
       run: |
         dpkg --add-architecture i386
         apt update
@@ -65,7 +66,7 @@ jobs:
       with:
         submodules: recursive
         repository: danielga/garrysmod_common
-        ref: master
+        ref: x86-64-support-sourcesdk
         path: 'garrysmod_common'
         
     - name: Install Premake
