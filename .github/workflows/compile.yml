@@ -29,7 +29,7 @@ jobs:
 
     - name: Remove old Sourcesdk
       run: |
-	rm -rf garrysmod_common/sourcesdk-minimal
+        rm -rf garrysmod_common/sourcesdk-minimal
 
     - uses: actions/checkout@v3
       with:
