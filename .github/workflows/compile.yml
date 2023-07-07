@@ -24,8 +24,19 @@ jobs:
       with:
         submodules: recursive
         repository: danielga/garrysmod_common
-        ref: master
+        ref: x86-64-support-sourcesdk
         path: 'garrysmod_common'
+
+    - name: Remove old Sourcesdk
+      run: |
+	rm -rf garrysmod_common/sourcesdk-minimal
+
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+        repository: RaphaelIT7/
+        ref: testing
+        path: 'garrysmod_common/sourcesdk-minimal'
         
     - name: Install Premake
       run: |
@@ -43,7 +54,7 @@ jobs:
         make
 
     - name: Make 64x
-      if: false
+      if: env.BUILD_64x == 'true'
       run: |
         cd projects/linux/gmake
         make config=releasewithsymbols_x86_64
@@ -54,7 +65,7 @@ jobs:
         path: projects/linux/gmake/x86/ReleaseWithSymbols/gm${{env.REALM}}_${{env.PROJECT_NAME}}_linux.dll
 
     - uses: actions/upload-artifact@v2
-      if: false
+      if: env.BUILD_64x == 'true'
       with:
         name: gm${{env.FINAL_REALM}}_${{env.PROJECT_NAME}}_linux64.dll
         path: projects/linux/gmake/x86_64/ReleaseWithSymbols/gm${{env.REALM}}_${{env.PROJECT_NAME}}_linux64.dll
